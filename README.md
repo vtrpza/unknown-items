@@ -1,9 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# UNKNOWN ITEMS
+
+A social media platform for sharing and discovering unknown facts, internet mysteries, unidentified objects, and unexplained events.
+
+## Overview
+
+UNKNOWN ITEMS is a community-driven platform similar to Twitter and Reddit, designed specifically for sharing and discussing mysterious, unknown, or unexplained content. Users can post about:
+
+- Unknown facts and trivia
+- Internet mysteries and unsolved cases
+- Unidentified objects and artifacts
+- Unexplained events and phenomena
+- Historical mysteries
+- Scientific anomalies
+- And more...
+
+## Features
+
+- **Post Creation**: Share your discoveries with text, images, and links
+- **Community Interaction**: Like, comment, and share posts
+- **Categories**: Organize content by type (facts, objects, events, mysteries)
+- **Search & Discovery**: Find posts by keywords, tags, or categories
+- **User Profiles**: Build your reputation as a mystery enthusiast
+- **Trending Topics**: See what unknown items are captivating the community
+
+## Tech Stack
+
+- **Frontend**: Next.js 15.4.5 with App Router
+- **UI Components**: shadcn/ui with Tailwind CSS
+- **Database**: Prisma ORM
+- **TypeScript**: Full type safety throughout the application
+- **Authentication**: TBD
+- **Deployment**: Optimized for Vercel
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js 18+ 
+- npm, yarn, pnpm, or bun
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone [repository-url]
+cd unknown-items
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+```
+
+3. Set up environment variables:
+```bash
+cp .env.example .env.local
+```
+
+4. Set up the database:
+```bash
+npx prisma db push
+```
+
+5. Run the development server:
 ```bash
 npm run dev
 # or
@@ -14,23 +79,26 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to see the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+unknown-items/
+├── src/
+│   ├── app/           # Next.js app router pages
+│   ├── components/    # React components
+│   ├── lib/          # Utilities and configurations
+│   └── styles/       # Global styles
+├── prisma/           # Database schema and migrations
+├── public/           # Static assets
+└── ...
+```
 
-## Learn More
+## Contributing
 
-To learn more about Next.js, take a look at the following resources:
+We welcome contributions! Please see our contributing guidelines for more information.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[License information to be added]
