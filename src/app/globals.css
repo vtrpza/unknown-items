@@ -1,5 +1,5 @@
-@import "tailwindcss";
-@import "tw-animate-css";
+@import 'tailwindcss';
+@import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
 
@@ -118,5 +118,45 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-feature-settings:
+      'rlig' 1,
+      'calt' 1;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .mystery-gradient {
+    @apply bg-gradient-to-br from-purple-500 via-indigo-500 to-blue-500;
+  }
+
+  .mystery-text-gradient {
+    @apply bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-600 bg-clip-text text-transparent;
+  }
+
+  .glass-effect {
+    @apply backdrop-blur-md bg-background/80 border border-border/50;
+  }
+
+  .hover-lift {
+    @apply transition-transform hover:scale-[1.02] hover:-translate-y-1;
+  }
+
+  .mystery-shadow {
+    box-shadow:
+      0 0 20px rgb(139 92 246 / 0.3),
+      0 0 40px rgb(139 92 246 / 0.1);
+  }
+
+  .dark .mystery-shadow {
+    box-shadow:
+      0 0 20px rgb(139 92 246 / 0.4),
+      0 0 40px rgb(139 92 246 / 0.2);
   }
 }
